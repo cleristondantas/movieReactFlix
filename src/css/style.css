@@ -1,0 +1,29 @@
+span.ano-tempo {
+    font-size: 12px;
+    color: #505050;
+    display: block;
+}
+
+span.categoria {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+span.sinopse {
+    font-size: 12px;
+    text-align: justify;
+    color: #191919;
+    display: block;
+    margin-bottom: 10px;
+}
+
+span.rate {
+    font-size: 20px;
+    float: right;
+}
+
+img.poster{
+    width: 185px;
+    height: 278px;
+}
