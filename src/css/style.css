@@ -1,16 +1,17 @@
-span.ano-tempo {
+small.ano-tempo {
     font-size: 12px;
     color: #505050;
     display: block;
-}
-
-span.categoria {
-    display: block;
-    font-size: 12px;
     margin-bottom: 10px;
 }
 
-span.sinopse {
+small.categoria {
+    display: block;
+    font-size: 12px;
+
+}
+
+small.sinopse {
     font-size: 12px;
     text-align: justify;
     color: #191919;
@@ -18,12 +19,17 @@ span.sinopse {
     margin-bottom: 10px;
 }
 
-span.rate {
-    font-size: 20px;
+small.rate {
+    font-size: 18px;
     float: right;
+    margin-top: 10px;
 }
 
 img.poster{
     width: 185px;
     height: 278px;
+}
+
+strong.titulo {
+    font-size: 18px;
 }

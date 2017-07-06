@@ -1,11 +1,17 @@
 import React from "react";
 
-export default class Title extends React.Component {
+export default class Cabecalho extends React.Component {
     render() {
         return (
-            <div class="alert alert-warning">
-                <p>Últimos Lançamentos</p>
-            </div>
+            <section class="hero is-dark">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Últimos Lançamentos
+                        </h1>
+                    </div>
+                </div>
+            </section>
         );
     }
 }
