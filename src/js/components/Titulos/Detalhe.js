@@ -1,5 +1,7 @@
 import React from "react";
 
+import numeral from "numeral";
+
 export default class Detalhe extends React.Component {
     constructor(props) {
         super(props);
@@ -46,6 +48,9 @@ export default class Detalhe extends React.Component {
 
         console.log(filme);
 
+        var gasto = numeral(filme.budget).format('$0,0.00');
+        var receita = numeral(filme.revenue).format('$0,0.00');
+
         return (
             <div class="container">
                 <div class="notification">
@@ -81,13 +86,13 @@ export default class Detalhe extends React.Component {
                           <div class="level-item has-text-centered">
                             <div>
                               <p class="heading">Orçamento</p>
-                              <p class="title">{filme.budget}</p>
+                              <p class="title">{gasto}</p>
                             </div>
                           </div>
                           <div class="level-item has-text-centered">
                             <div>
                               <p class="heading">Receita</p>
-                              <p class="title">{filme.revenue}</p>
+                              <p class="title">{receita}</p>
                             </div>
                           </div>
                         </nav>
