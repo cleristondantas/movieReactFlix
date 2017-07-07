@@ -14,7 +14,7 @@ export default class Titulos extends React.Component {
     }
 
     componentDidMount() {
-        return fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=<sua_key>&language=pt-BR')
+        return fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=85fc6ae2ec13cac24e628d4588fbe1fe&language=pt-BR')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({
@@ -52,7 +52,7 @@ export default class Titulos extends React.Component {
                         <div class="media-content">
                             <div class="content">
                             <p>
-                                <strong class="titulo"><Link to={"/detalhes/" + titulo.id}> {titulo.title} </Link></strong>
+                                <strong class="titulo"><Link to={"/detalhes/" + titulo.id} key={titulo.id}> {titulo.title} </Link></strong>
                                 <small class="categoria">{titulo.original_title}</small>
                                 <small class="ano-tempo">{titulo.release_date} | 2h50m</small>
                                 {titulo.overview}

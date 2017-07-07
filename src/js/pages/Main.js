@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Route, Switch  } from "react-router-dom";
 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Lista from "../components/Titulos/Lista";
 import Home from "../pages/Home";
 import Detalhe from "../components/Titulos/Detalhe";
@@ -23,6 +24,7 @@ export default class Main extends React.Component {
             <div>
                 <Header/>
                 <Conteudo />
+                <Footer />
             </div>
         );
     }
