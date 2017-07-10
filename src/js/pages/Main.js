@@ -12,6 +12,7 @@ const Conteudo = () => (
     <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/lista' component={Lista}/>
+        <Route path='/lista/:id' component={Lista}/>
         <Route path='/detalhes/:id' component={Detalhe}/>
     </Switch>
   </main>

@@ -11,15 +11,13 @@ export default class Detalhe extends React.Component {
         var quebraUrl = url.split("/");
         this.idFilme = quebraUrl[2];
 
-        console.log(this.idFilme);
-
         this.state = {
             isLoading: true
         }
     }
 
     componentDidMount() {
-        return fetch('https://api.themoviedb.org/3/movie/'+this.idFilme+'?api_key=85fc6ae2ec13cac24e628d4588fbe1fe&language=pt-BR')
+        return fetch('https://api.themoviedb.org/3/movie/'+this.idFilme+'?api_key=<key>&language=pt-BR')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({
@@ -38,8 +36,8 @@ export default class Detalhe extends React.Component {
 
         if (this.state.isLoading) {
             return (
-                <div>
-                    <h2> Carregando </h2>
+               <div class="container">
+                    <h1> <center> Carregando </center> </h1>
                 </div>
             );
         }

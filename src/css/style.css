@@ -33,3 +33,7 @@ img.poster{
 strong.titulo {
     font-size: 18px;
 }
+
+.box {
+    min-height: 234px;
+}
